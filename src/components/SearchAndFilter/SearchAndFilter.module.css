@@ -1,0 +1,92 @@
+.container {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* --- Main Search Bar Styling (No Changes) --- */
+.searchBarWrapper {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.mainSearchInput {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3.5rem;
+  font-size: 1.2rem;
+  border-radius: var(--border-radius);
+  border: 2px solid transparent;
+  box-shadow: var(--box-shadow);
+  transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+.light .mainSearchInput {
+  background-color: var(--card-bg-light);
+}
+
+.mainSearchInput:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+}
+
+/* --- Filter Panel Grid Layout --- */
+.filterPanel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+}
+.light .filterPanel {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterGroup label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.light .filterGroup label {
+  opacity: 0.9;
+}
+
+.filterGroup input,
+.filterGroup select {
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+.light .filterGroup input, .light .filterGroup select {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+
+
+.filterGroup input:focus,
+.filterGroup select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.yearInputs {
+  display: flex;
+  gap: 0.5rem;
+}

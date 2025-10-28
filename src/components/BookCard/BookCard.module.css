@@ -1,0 +1,62 @@
+/* --- NEW: THEME-INDEPENDENT STYLE --- */
+.card {
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  
+  /* The "frosted glass" effect */
+  background-color: rgba(20, 30, 40, 0.85); /* Semi-transparent bluish-black */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  /* Text color is now always light */
+  color: #f0f0f0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* We remove the old theme-specific rules like ".light .card" and ".dark .card" */
+
+.cover {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff; /* Ensure title is bright white */
+}
+
+.author, .meta {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+  opacity: 0.8;
+}
+
+.favButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}

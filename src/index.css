@@ -1,0 +1,36 @@
+/* --- UPDATED: Simplified Light-Mode-Only Variables --- */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f4f6f8;
+  --text-color: #2c3e50;
+  --card-bg: #ffffff;
+  --header-bg: rgba(255, 255, 255, 0.85); /* Made slightly more opaque for clarity */
+  
+  --font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --transition-speed: 0.3s ease;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background-image: url('./assets/background-light.jpg');
+  
+  /* --- BACKGROUND IMAGE FIX --- */
+  background-size: cover;
+  background-attachment: fixed;
+  /* This ensures the top of the image is always visible, preventing awkward zooming */
+  background-position: top center; 
+  background-repeat: no-repeat;
+}
+
+/* We no longer need any ::before overlays or .dark/.light body classes */
+
+.app-wrapper {
+  position: relative;
+  z-index: 1;
+}

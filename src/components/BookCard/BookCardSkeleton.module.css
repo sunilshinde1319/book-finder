@@ -1,0 +1,43 @@
+.skeletonCard {
+  /* This matches the translucent dark style of your real cards */
+  background-color: rgba(20, 30, 40, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.skeleton {
+  /* A slightly lighter, pulsing color for the loading effect */
+  background-color: rgba(255, 255, 255, 0.1);
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.skeletonImage {
+  width: 100%;
+  height: 250px;
+}
+
+.skeletonInfo {
+  padding: 1rem;
+}
+
+.skeletonText {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.short {
+  width: 60%;
+}
