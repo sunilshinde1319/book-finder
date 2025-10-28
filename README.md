@@ -2,8 +2,7 @@
 
 Book Finder is a responsive, feature-rich web application designed to help users efficiently search, filter, and explore books using the Open Library API. It features a clean, modern UI with a unique "always dark" content design, infinite scrolling for seamless browsing, and a persistent favorites list.
 
-**Live Demo Link:** book-finder-k8eg2oe7a-sunil-shindes-projects-c1ed8b41.vercel.app
-*(Note: Replace this with your actual Vercel deployment link!)*
+**Live Demo Link:** [https://book-finder-demo-link.vercel.app](https://book-finder-lemon-pi.vercel.app/) 
 
 ---
 
